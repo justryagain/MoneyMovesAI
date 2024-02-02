@@ -1,0 +1,272 @@
+2024-02-01 23:55:15,592: root: INFO: MMStrat : Executing the initialize lifecycle method
+2024-02-01 23:55:15,843: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:15,883: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:16,258: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:16,270: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:16,286: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:16,357: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:16,459: root: INFO: Current backtesting datetime 2024-01-02 08:30:00-05:00
+2024-02-01 23:55:16,472: root: INFO: MMStrat : Executing the before_market_opens lifecycle method
+2024-02-01 23:55:16,473: root: INFO: Current backtesting datetime 2024-01-02 09:30:00-05:00
+2024-02-01 23:55:16,474: root: INFO: MMStrat : Executing the before_starting_trading lifecycle method
+2024-02-01 23:55:16,475: root: INFO: [34mMMStrat : Executing the on_trading_iteration lifecycle method at 2024-02-01 23:55:16[0m
+2024-02-01 23:55:16,475: root: INFO: [32mNew market order of | 5 APPL buy | with status unprocessed was submitted.[0m
+2024-02-01 23:55:16,477: root: INFO: [34mMMStrat : Trading iteration ended at 2024-02-01 23:55:16[0m
+2024-02-01 23:55:16,477: root: INFO: Getting historical prices for APPL, 1 bars, 
+2024-02-01 23:55:16,477: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-02-01 23:55:16,549: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:16,560: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:16,585: yfinance: ERROR: APPL: No price data found, symbol may be delisted (1d 1925-02-24 -> 2024-02-01)
+2024-02-01 23:55:16,735: root: ERROR: YAHOO did not return data for symbol APPL. Make sure this symbol is valid.
+2024-02-01 23:55:16,736: root: ERROR: 'NoneType' object has no attribute 'df'
+2024-02-01 23:55:16,750: root: ERROR: Traceback (most recent call last):
+  File "C:\Users\andre\Desktop\code\MoneyMovesAI\lib\site-packages\lumibot\strategies\strategy_executor.py", line 831, in run
+    self._run_trading_session()
+  File "C:\Users\andre\Desktop\code\MoneyMovesAI\lib\site-packages\lumibot\strategies\strategy_executor.py", line 785, in _run_trading_session
+    self.broker.process_pending_orders(strategy=self.strategy)
+  File "C:\Users\andre\Desktop\code\MoneyMovesAI\lib\site-packages\lumibot\backtesting\backtesting_broker.py", line 513, in process_pending_orders
+    dt = ohlc.df.index[-1]
+AttributeError: 'NoneType' object has no attribute 'df'
+
+2024-02-01 23:55:16,750: root: INFO: MMStrat : Executing the on_bot_crash event method
+2024-02-01 23:55:16,761: root: INFO: Backtesting finished
+2024-02-01 23:55:16,840: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:16,850: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:16,892: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:16,903: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:17,062: root: ERROR: Not enough data to create a tearsheet, at least 2 days of data are required. Skipping
+2024-02-01 23:55:17,063: backtest_stats: INFO: Backtest took 0:00:01.472753 for a speed of 0.000
+2024-02-01 23:55:17,075: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:17,085: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:17,340: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:17,350: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:17,371: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:17,381: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:17,558: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:17,568: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:17,832: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:17,842: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:17,846: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:17,857: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:18,035: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:18,045: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:18,320: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:18,326: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:18,330: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:18,336: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:18,533: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:18,543: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:18,808: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:18,814: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:18,818: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:18,824: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:19,021: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:19,031: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:19,294: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:19,301: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:19,304: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:19,311: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:19,508: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:19,519: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:19,774: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:19,784: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:19,789: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:19,799: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:20,002: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:20,012: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:20,255: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:20,265: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:20,273: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:20,283: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:20,484: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:20,494: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:20,725: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:20,736: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:20,766: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:20,776: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:20,971: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:20,981: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:21,215: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:21,225: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:21,242: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:21,252: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:21,455: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:21,466: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:21,691: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:21,701: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:21,731: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:21,742: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:21,941: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:21,951: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:22,187: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:22,197: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:22,213: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:22,223: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:22,428: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:22,439: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:22,659: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:22,670: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:22,701: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:22,711: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:22,906: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:22,917: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:23,141: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:23,151: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:23,206: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:23,216: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:23,387: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:23,397: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:23,627: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:23,637: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:23,695: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:23,705: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:23,881: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:23,891: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:24,099: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:24,110: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:24,201: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:24,214: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:24,368: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:24,378: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:24,596: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:24,606: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:24,684: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:24,694: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:24,926: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:24,936: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:25,078: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:25,088: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:25,161: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:25,171: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:25,460: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:25,470: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:25,571: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:25,582: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:25,663: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:25,674: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:25,938: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:25,949: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:26,065: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:26,075: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:26,151: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:26,162: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:26,428: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:26,438: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:26,553: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:26,563: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:26,632: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:26,642: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:26,914: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:26,925: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:27,034: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:27,044: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:27,103: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:27,113: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:27,394: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:27,404: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:27,516: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:27,527: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:27,600: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:27,611: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:27,871: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:27,881: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:27,994: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:28,005: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:28,088: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:28,108: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:28,354: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:28,365: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:28,491: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:28,501: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:28,586: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:28,603: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:28,855: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:28,866: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:28,971: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:28,981: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:29,067: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:29,084: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:29,341: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:29,352: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:29,480: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:29,490: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:29,578: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:29,595: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:29,835: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:29,845: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:29,966: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:29,976: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:30,078: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:30,088: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:30,310: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:30,321: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:30,447: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:30,457: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:30,577: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:30,587: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:30,793: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:30,804: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:30,937: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:30,947: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:31,054: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:31,064: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:31,287: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:31,297: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:31,431: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:31,441: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:31,529: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:31,544: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:31,783: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:31,790: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:31,908: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:31,918: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:32,022: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:32,032: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:32,250: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:32,260: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:32,389: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:32,399: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:32,505: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:32,516: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:32,726: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:32,737: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:32,866: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:32,877: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:32,993: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:33,003: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:33,223: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:33,234: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:33,356: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:33,366: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:33,484: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:33,495: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:33,721: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:33,732: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:33,837: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:33,847: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:33,955: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:33,965: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:34,214: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:34,224: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:34,334: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:34,344: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:34,431: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:34,446: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:34,698: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:34,708: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:34,812: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:34,822: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:34,927: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:34,938: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:35,182: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:35,192: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:35,295: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:35,305: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:35,406: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:35,417: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:35,668: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:35,678: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:35,770: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:35,782: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-02-01 23:55:35,891: alpaca.trading.stream: WARNING: trading stream websocket error, restarting  connection: server rejected WebSocket connection: HTTP 429
+2024-02-01 23:55:35,901: alpaca.trading.stream: INFO: starting trading websocket connection
